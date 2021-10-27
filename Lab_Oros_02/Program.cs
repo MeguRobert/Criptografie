@@ -10,7 +10,12 @@ namespace Lab_Oros_02
             string message = "hElLo";
             string key = "XMCKL";
             //OneTimePad_CharacterBased(message, key);
-            OneTimePad_XOR(message, key);
+            //OneTimePad_XOR(message, key);
+
+            PlayFairCipher playFairCipher = new PlayFairCipher();
+            playFairCipher.Key = "LETSCODETOGETHER";
+            playFairCipher.PrintKeyMatrix();
+
         }
 
         private static void OneTimePad_XOR(string message, string key)
